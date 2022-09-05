@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+<!--        <template id="bon_sortie_report_template">-->
+<!--            <html>-->
+<!--                <head>-->
+<!--                    <body>-->
+<!--                        <t t-call="web.html_container">-->
+<!--                            <t t-foreach="docs" t-as="o">-->
+<!--                                <t t-call="web.external_layout">-->
+<!--                                    &lt;!&ndash;                                    <h2>Devis N° S01101</h2>&ndash;&gt;-->
+<!--                                    <p>-->
+<!--                                        <b>-->
+<!--                                            <span style="font-size: 250%" t-esc="o.name_seq"/>-->
+<!--                                        </b>-->
+<!--                                    </p>-->
+<!--                                    <p>Date du devis :-->
+<!--                                        <span t-esc="o.date_order"/>-->
+<!--                                    </p>-->
+<!--                                    <br/>-->
+<!--                                    <br/>-->
+<!--                                    <p>Vendeur :-->
+<!--                                        <span t-esc="o.partner_id.name"/>-->
+<!--                                    </p>-->
+<!--                                    <br/>-->
+<!--                                    <br/>-->
+<!--                                    <table style="width:100%">-->
+<!--                                        <tr>-->
+<!--                                            <th>Product</th>-->
+<!--                                            <u>-->
+<!--                                                <th>Quantité</th>-->
+<!--                                            </u>-->
+<!--                                            <th>P.U (HT)</th>-->
+<!--                                            <th>Date de sortie</th>-->
+<!--                                            <th>Date de retour</th>-->
+<!--                                            &lt;!&ndash;                                            <th>P.T (HT) </th>&ndash;&gt;-->
+<!--                                        </tr>-->
+<!--                                        <tr>-->
+<!--                                            <t t-foreach="o.return_line_ids" t-as="line">-->
+<!--                                                <td>-->
+<!--                                                    <span t-field="line.product_id.name"/>-->
+<!--                                                </td>-->
+<!--                                                <td>-->
+<!--                                                    <span t-field="line.product_qty"/>-->
+<!--                                                </td>-->
+<!--                                                <td>-->
+<!--                                                    <span t-field="line.price_unit"/>-->
+<!--                                                </td>-->
+<!--                                                <td>-->
+<!--                                                    <span t-field="line.date_order"/>-->
+<!--                                                </td>-->
+<!--                                                <td>-->
+<!--                                                    <span t-field="o.date_exp"/>-->
+<!--                                                </td>-->
+<!--                                                &lt;!&ndash;                                                <td>&ndash;&gt;-->
+<!--                                                &lt;!&ndash;                                                    <span t-field="line.price_subtotal"/>&ndash;&gt;-->
+<!--                                                &lt;!&ndash;                                                </td>&ndash;&gt;-->
+<!--                                            </t>-->
+<!--                                        </tr>-->
+<!--                                    </table>-->
+
+<!--                                </t>-->
+<!--                            </t>-->
+<!--                        </t>-->
+<!--                    </body>-->
+<!--                </head>-->
+<!--            </html>-->
+<!--        </template>-->
+    </data>
+</odoo>
+

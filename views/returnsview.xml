@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="retour_view_form" model="ir.ui.view">
+            <field name="name">Retour Form</field>
+            <field name="model">stocks.retour</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="project_name"/>
+                                <field name="date_exp"/>
+                                <field name="date_order"/>
+
+                            </group>
+                            <group>
+                                <field name="partner_id"/>
+<!--                                <field name="amount_total"/>-->
+                                <field name="location_id"/>
+                                <field name="picking_id"/>
+
+                            </group>
+                        </group>
+                        <group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="cheque_view_tree" model="ir.ui.view">
+            <field name="name">Cheque List</field>
+            <field name="model">stocks.retour</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="project_name"/>
+                    <field name="date_exp"/>
+                    <field name="date_order"/>
+                    <field name="partner_id"/>
+<!--                    <field name="amount_total"/>-->
+                    <field name="location_id"/>
+                    <field name="picking_id"/>
+                </tree>
+            </field>
+
+        </record>
+
+
+        <!--        <record id="cheque_view_search" model="ir.ui.view">-->
+        <!--            <field name="name">Cheque Search</field>-->
+        <!--            <field name="model">stocks.retour</field>-->
+        <!--            <field name="arch" type="xml">-->
+        <!--                <search>-->
+        <!--                    <field name="name"/>-->
+        <!--                    <field name="date_order"/>-->
+        <!--                    <filter string="No name" name="without_name" domain="[('name','=',False)]"/>-->
+        <!--                </search>-->
+        <!--            </field>-->
+        <!--        </record>-->
+
+
+        <!--    action-->
+        <record id="returns_action" model="ir.actions.act_window">
+            <field name="name">Bon de sortie</field>
+            <field name="res_model">stocks.retour</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Stock" id="returns_menu_root"/>
+        <menuitem name="Returns" id="retuns_menu_cat" parent="returns_menu_root"
+                  action="returns_action"/>
+    </data>
+</odoo>

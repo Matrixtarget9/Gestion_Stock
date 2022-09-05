@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+<!--        <report id="bon_sortie_report"-->
+<!--                string="Bon de sortie"-->
+<!--                name="stocks.bon_sortie_report_template"-->
+<!--                model="stocks.returns"-->
+<!--                report_type="qweb-pdf"/>-->
+
+<!--        <record id="bon_sortie_report" model="ir.actions.report">-->
+<!--            <field name="name">Bon de sortie</field>-->
+<!--            <field name="model">stocks.return</field>-->
+<!--            <field name="report_type">qweb-pdf</field>-->
+<!--            <field name="report_name">stocks.bon_sortie_report_template</field>-->
+<!--            <field name="report_file">stocks.bon_sortie_report_template</field>-->
+<!--            <field name="binding_model_id" ref="model_stocks_return"/>-->
+<!--            <field name="binding_type">report</field>-->
+<!--        </record>-->
+    </data>
+</odoo>
